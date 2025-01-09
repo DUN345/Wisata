@@ -1,0 +1,158 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f8f8f8;
+    /* Light background for better contrast */
+    border: 1px solid #ddd;
+    /* Subtle border */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    list-style: none;
+    /* Remove default list styling */
+    padding: 10px 0;
+    /* Space around list items */
+    margin: 0;
+    /* Remove extra margin */
+    z-index: 1000;
+    /* Ensure the dropdown is above other elements */
+    min-width: 150px;
+    /* Minimum width for the dropdown */
+}
+
+/* Style for individual list items */
+.dropdown-menu li {
+    padding: 0;
+    /* No extra padding around list items */
+    margin: 0;
+    /* No extra margin */
+}
+
+/* Style for links in the dropdown */
+.dropdown-menu a {
+    color: #536493;
+    /* Blue-gray color for links */
+    display: block;
+    /* Make the entire link clickable */
+    padding: 8px 15px;
+    /* Space inside the links */
+    /* Remove underline */
+    font-size: 16px;
+    /* Readable font size */
+}
+
+/* Hover effect for links */
+.dropdown-menu a:hover {
+    background-color: #88c273;
+    /* Green background on hover */
+    color: white;
+    /* White text for contrast */
+}
+
+/* Display the dropdown menu on hover */
+.profile-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Positioning for the dropdown container */
+.profile-dropdown {
+    position: relative;
+    /* Necessary for the dropdown to align correctly */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 80px;
+    /* Ukuran tabel lebih kecil */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: #0000ee;
+    padding: 4px 8px;
+    /* Padding lebih kecil */
+    text-decoration: none;
+    font-size: 10px;
+    /* Ukuran font lebih kecil */
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #8bc34a;
+}
+
+.dropbtn {
+    background-color: #8bc34a;
+    color: white;
+    padding: 4px 8px;
+    /* Padding lebih kecil */
+    font-size: 10px;
+    /* Ukuran font lebih kecil */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between; /* Menjaga ruang antar elemen */
+    margin-top: 30px;
+    align-items: center; /* Agar item sejajar secara vertikal */
+    border-top: 1px solid #ddd;
+}
+
+/* Membuat konten di dalam div footer menjadi horizontal */
+.footer div {
+    display: flex; /* Flexbox untuk membuat isi div sebaris */
+    flex-direction: row; /* Pastikan arah horizontal */
+    gap: 15px; /* Memberikan jarak antar item */
+    align-items: center; /* Pusatkan item secara vertikal */
+    text-align: left; /* Posisi teks ke kiri */
+}
+
+.footer div p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Contoh styling tambahan untuk link atau ikon */
+.footer div a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer div a:hover {
+    color: #27ae60;
+}
+
